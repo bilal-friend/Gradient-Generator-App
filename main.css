@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: sans-serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background: white;
+  border: 1px solid black;
+  padding: 40px 20px;
+  border-radius: 10px;
+  width: 90vw;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  box-shadow: rgba(0, 0, 0, 0.8) 1px 1px 10px;
+}
+.colorIn {
+  display: flex;
+  justify-content: center;
+  gap: 30%;
+}
+.colorIn input {
+  width: 90px;
+  height: 40px;
+  background: transparent;
+}
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 45px;
+}
+body {
+  background-image: linear-gradient(to bottom, #788acf, #182882);
+}
+button {
+  color: white;
+  background: #4373e4;
+  width: fit-content;
+  margin: auto;
+  padding: 10px 40px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+button:hover {
+  background: #294481;
+}
+.result {
+  background: #d6d8e1;
+  padding: 10px;
+  position: relative;
+  padding-bottom: 80px;
+}
+.result span {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: white;
+  background: dodgerblue;
+  width: 150px;
+  height: 37px;
+  text-align: center;
+  padding: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.icons span {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.icons span.selected {
+  color: white;
+  background: dodgerblue;
+  border: none;
+}
+.rotate {
+  transform: rotate(45deg);
+}

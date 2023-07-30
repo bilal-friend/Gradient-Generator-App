@@ -1,0 +1,51 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="font-icon/all.min.css" />
+    <link rel="stylesheet" href="font-icon/fontawesome.min.css" />
+    <link rel="icon" href="img/gradient.png" type="image/x-icon" />
+    <title>Gradient Generator App</title>
+  </head>
+  <body class="center">
+    <div class="card">
+      <div class="colorIn">
+        <input type="color" value="#788acf" />
+        <input type="color" value="#182882" />
+      </div>
+      <div class="icons">
+        <span class="center" direction="to top">
+          <i class="fas fa-arrow-up"></i>
+        </span>
+        <span class="center selected" direction="to bottom">
+          <i class="fas fa-arrow-down"></i>
+        </span>
+        <span class="center" direction="to right">
+          <i class="fas fa-arrow-right"></i>
+        </span>
+        <span class="center" direction="to left">
+          <i class="fas fa-arrow-left"></i>
+        </span>
+        <span class="center" direction="45deg">
+          <i class="fas fa-arrow-up rotate"></i>
+        </span>
+        <span class="center" direction="225deg">
+          <i class="fas fa-arrow-down rotate"></i>
+        </span>
+        <span class="center" direction="135deg">
+          <i class="fas fa-arrow-right rotate"></i>
+        </span>
+        <span class="center" direction="315deg">
+          <i class="fas fa-arrow-left rotate"></i>
+        </span>
+      </div>
+      <button>Generate</button>
+      <div class="result">
+        <p>background-image: linear-gradient(to bottom, #788acf, #182882);</p>
+        <span>Copy</span>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
