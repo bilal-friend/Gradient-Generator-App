@@ -1,4 +1,4 @@
-// Project : Gradient Generator App
+/// Project : Gradient Generator App
 const startColor = document.querySelector("input:first-child");
 const endColor = document.querySelector("input:nth-child(2)");
 const btn = document.querySelector("button");
@@ -16,12 +16,12 @@ btn.addEventListener("click", () => {
 });
 
 arrows.forEach((cv) => {
-  cv.onclick = () => {
+  cv.addEventListener("click", () => {
     if (selected === cv) return;
     selected.classList.remove("selected");
     cv.classList.add("selected");
     selected = cv;
-  };
+  });
 });
 
 copy.addEventListener("click", function () {
